@@ -1,0 +1,27 @@
+body{
+  background-color: rgb(37, 37, 37);
+}
+.array-bar {
+  transition: background-color 0.3s ease, height 0.3s ease;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  .array-bar {
+    width: 6px; /* Smaller bar width for smaller screens */
+    margin: 0 1px;
+  }
+}
+
+@media (min-width: 601px) {
+  .array-bar {
+    width: 10px; /* Default bar width for larger screens */
+    margin: 0 2px;
+  }
+}
